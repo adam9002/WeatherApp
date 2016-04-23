@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" stylesheets="@mainpage.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.homepageControllerIpad">
+   <children>
+      <Label fx:id="city" layoutX="6.0" layoutY="14.0" prefHeight="56.0" prefWidth="154.0" textFill="#e8e6e6">
+         <font>
+            <Font name="Andale Mono" size="33.0" />
+         </font>
+      </Label>
+      <Button layoutX="77.0" layoutY="668.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="90.0" AnchorPane.bottomAnchor="32.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="666.0">
+         <graphic>
+            <ImageView fx:id="location" fitHeight="32.0" fitWidth="41.0">
+               <image>
+                  <Image url="@../pic/icon2.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="button2" layoutX="915.0" layoutY="666.0" mnemonicParsing="false" onAction="#goTOScreen2" prefHeight="70.0" prefWidth="90.0" stylesheets="@mainpage.css" AnchorPane.bottomAnchor="32.0" AnchorPane.leftAnchor="915.0" AnchorPane.rightAnchor="19.0" AnchorPane.topAnchor="666.0">
+         <graphic>
+            <ImageView fitHeight="53.0" fitWidth="65.0">
+               <image>
+                  <Image url="@../pic/icon1.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="button" layoutX="917.0" layoutY="292.0" mnemonicParsing="false" onAction="#goTOScreen3" prefHeight="63.0" prefWidth="85.0">
+         <graphic>
+            <ImageView fitHeight="43.0" fitWidth="42.0">
+               <image>
+                  <Image url="@../pic/icon2.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label fx:id="condition" layoutX="84.0" layoutY="68.0" prefHeight="32.0" prefWidth="163.0" textFill="#e4e4e4">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <TextFlow fx:id="forcas" layoutX="258.0" layoutY="605.0" prefHeight="153.0" prefWidth="562.0" AnchorPane.rightAnchor="204.0" AnchorPane.topAnchor="605.0" />
+      <AnchorPane layoutX="10.0" layoutY="48.0" prefHeight="92.0" prefWidth="151.0">
+         <children>
+            <Label fx:id="temp" layoutX="14.0" layoutY="9.0" prefHeight="77.0" prefWidth="125.0" textFill="#e4e4e4">
+               <font>
+                  <Font size="45.0" />
+               </font>
+            </Label>
+            <Label fx:id="unit" layoutX="88.0" layoutY="48.0" prefHeight="22.0" prefWidth="82.0" textFill="#e4e4e4">
+               <font>
+                  <Font size="21.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="631.0" layoutY="38.0" prefHeight="81.0" prefWidth="348.0">
+         <children>
+            <Label fx:id="currentday" layoutX="177.0" layoutY="23.0" prefHeight="29.0" prefWidth="119.0" textFill="#fff9f9">
+               <font>
+                  <Font size="30.0" />
+               </font></Label>
+            <Text fill="#fcfafa" layoutX="-24.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current day:" wrappingWidth="194.27377319335938">
+               <font>
+                  <Font name="Tahoma" size="34.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="480.0" prefWidth="320.0" stylesheets="@mainpage.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.homepageController">
+   <children>
+      <Label fx:id="city" layoutX="6.0" layoutY="14.0" prefHeight="25.0" prefWidth="99.0" textFill="WHITE">
+         <font>
+            <Font name="Andale Mono" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="button" layoutX="252.0" layoutY="217.0" mnemonicParsing="false" onAction="#goTOscreen3">
+         <graphic>
+            <ImageView fitHeight="33.0" fitWidth="33.0">
+               <image>
+                  <Image url="@../pic/icon2.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label fx:id="condition" layoutX="84.0" layoutY="68.0" prefHeight="32.0" prefWidth="163.0" textFill="#e4e4e4" />
+      <AnchorPane layoutX="10.0" layoutY="48.0" prefHeight="76.0" prefWidth="136.0">
+         <children>
+            <Label fx:id="temp" layoutX="14.0" layoutY="38.0" prefHeight="0.0" prefWidth="50.0" textFill="WHITE">
+               <font>
+                  <Font size="39.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="17.0" fitWidth="19.0" layoutX="49.0" layoutY="38.0">
+               <image>
+                  <Image url="@../pic/degree.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="152.0" layoutY="21.0" prefHeight="55.0" prefWidth="154.0">
+         <children>
+            <Label fx:id="currentday" layoutX="80.0" layoutY="22.0" prefHeight="25.0" prefWidth="78.0" textFill="WHITE" />
+            <Text fill="WHITE" layoutX="14.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current day:">
+               <font>
+                  <Font name="Tahoma" size="12.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Button fx:id="Switch" layoutX="12.0" layoutY="419.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="25.0">
+         <graphic>
+            <ImageView fitHeight="33.0" fitWidth="33.0">
+               <image>
+                  <Image url="@../pic/icon4.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fx:id="conditionIm" fitHeight="46.0" fitWidth="50.0" layoutX="152.0" layoutY="77.0">
+         <image>
+            <Image url="@../pic/partly.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="button2" layoutX="252.0" layoutY="425.0" mnemonicParsing="false" onAction="#goTOScreen2" prefHeight="32.0" prefWidth="44.0" stylesheets="@mainpage.css">
+         <graphic>
+            <ImageView fitHeight="29.0" fitWidth="39.0">
+               <image>
+                  <Image url="@../pic/icon1.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <AnchorPane layoutY="325.0" prefHeight="76.0" prefWidth="320.0">
+         <children>
+            <Label fx:id="day1" layoutX="14.0" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="day2" layoutX="83.0" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="day3" layoutX="143.0" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="day4" layoutX="208.0" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="day5" layoutX="280.0" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="imgD1" fitHeight="41.0" fitWidth="50.0" layoutX="7.0" layoutY="17.0">
+               <image>
+                  <Image url="@../pic/partly.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgD2" fitHeight="41.0" fitWidth="50.0" layoutX="68.0" layoutY="18.0">
+               <image>
+                  <Image url="@../pic/partly.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgD3" fitHeight="41.0" fitWidth="50.0" layoutX="126.0" layoutY="18.0">
+               <image>
+                  <Image url="@../pic/partly.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgD4" fitHeight="41.0" fitWidth="50.0" layoutX="191.0" layoutY="17.0">
+               <image>
+                  <Image url="@../pic/partly.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgD5" fitHeight="41.0" fitWidth="50.0" layoutX="262.0" layoutY="17.0">
+               <image>
+                  <Image url="@../pic/partly.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
