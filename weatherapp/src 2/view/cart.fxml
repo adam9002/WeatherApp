@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="480.0" prefWidth="320.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.CartController">
+   <children>
+      <Button layoutX="6.0" layoutY="202.0" mnemonicParsing="false" onAction="#goToscreen1" prefHeight="35.0" prefWidth="42.0" stylesheets="@mainpage.css">
+         <graphic>
+            <ImageView fitHeight="26.0" fitWidth="27.0" styleClass="mainFxmlClass">
+               <image>
+                  <Image url="@../pic/back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fx:id="comfort" fitHeight="86.0" fitWidth="200.0" layoutX="61.0" layoutY="14.0">
+         <image>
+            <Image url="@../pic/Excellent%20.jpg" />
+         </image>
+         <effect>
+            <InnerShadow color="#27cf3f" />
+         </effect>
+      </ImageView>
+      <Button layoutX="167.0" layoutY="292.0" mnemonicParsing="false" prefHeight="126.0" prefWidth="99.0" stylesheets="@mainpage.css">
+         <graphic>
+            <ImageView fitHeight="156.0" fitWidth="119.0">
+               <image>
+                  <Image url="@../pic/store1.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="6.0" layoutY="292.0" mnemonicParsing="false" prefHeight="168.0" prefWidth="153.0" stylesheets="@mainpage.css">
+         <graphic>
+            <ImageView fitHeight="139.0" fitWidth="122.0">
+               <image>
+                  <Image url="@../pic/store2.jpg" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="12.0" layoutY="247.0" prefHeight="17.0" prefWidth="279.0" text="Toys avaliable at petplanet.co.uk" textFill="WHITE">
+         <font>
+            <Font name="Avenir Roman" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

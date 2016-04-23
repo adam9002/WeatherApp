@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="480.0" prefWidth="320.0" style="-fx-background-color: #C6C6C6;" styleClass="btn4" stylesheets="@mainpage.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ThemeController">
+   <children>
+      <Pane prefHeight="55.0" prefWidth="323.0" style="-fx-background-color: #595959;">
+         <children>
+            <Text fill="#f2eeee" layoutX="23.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Theme" wrappingWidth="221.21875">
+               <font>
+                  <Font name="Avenir Next Ultra Light Italic" size="19.0" />
+               </font>
+            </Text>
+            <Button fx:id="btn4" layoutX="164.0" layoutY="13.0" mnemonicParsing="false" onAction="#goToScreen1" prefHeight="29.0" prefWidth="142.0" text="Default Theme " textFill="#fffefe" />
+         </children>
+      </Pane>
+      <Button fx:id="btn" layoutX="57.0" layoutY="66.0" mnemonicParsing="false" onAction="#setfirsttheme" prefHeight="95.0" prefWidth="164.0">
+         <graphic>
+            <ImageView fitHeight="87.0" fitWidth="155.0">
+               <image>
+                  <Image url="@../pic/background1.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btn2" layoutX="58.0" layoutY="171.0" mnemonicParsing="false" onAction="#setsecondtheme" prefHeight="121.0" prefWidth="164.0">
+         <graphic>
+            <ImageView fitHeight="109.0" fitWidth="153.0">
+               <image>
+                  <Image url="@../pic/background2.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btn3" layoutX="61.0" layoutY="312.0" mnemonicParsing="false" onAction="#setThirdtheme" prefHeight="138.0" prefWidth="165.0">
+         <graphic>
+            <ImageView fitHeight="116.0" fitWidth="135.0">
+               <image>
+                  <Image url="@../pic/background3.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>
